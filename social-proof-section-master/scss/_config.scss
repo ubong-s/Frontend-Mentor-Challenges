@@ -1,0 +1,35 @@
+// Google font import
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+$primaryMagenta: hsl(300, 43%, 22%);
+$primaryPink: hsl(333, 80%, 67%);
+$neutralDark: hsl(303, 10%, 53%);
+$neutralLight: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+// Media queries
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}

@@ -1,0 +1,100 @@
+.social {
+  position: relative;
+
+  // Top Section
+  &-top {
+    background: url(../images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    margin: auto;
+    padding: 5rem 1.25rem 2.5rem;
+    text-align: center;
+  }
+
+  // Intro Section
+  &-intro {
+    margin-bottom: 2rem;
+
+    h1 {
+      color: $primaryMagenta;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .intro-text {
+      font-size: 0.925rem;
+    }
+  }
+
+  // Ratings
+  &-rating {
+    display: grid;
+    gap: 1rem;
+
+    &-item {
+      background: $neutralLight;
+      padding: 1.2rem;
+      border-radius: 0.5rem;
+
+      .stars {
+        margin-bottom: 0.25rem;
+
+        * {
+          margin: 0 2.5px;
+        }
+      }
+
+      p {
+        font-weight: 700;
+        color: $primaryMagenta;
+      }
+    }
+  }
+
+  // Bottom Section
+  &-btm {
+    background: url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: grid;
+    gap: 1rem;
+    margin: auto;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+
+  &-review {
+    background: $primaryMagenta;
+    padding: 2.5rem 1.65rem;
+    border-radius: 0.5rem;
+    color: $white;
+
+    &-top {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .avatar {
+        border-radius: 100%;
+        width: 45px;
+      }
+
+      .info {
+        h4 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          color: $primaryPink;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
