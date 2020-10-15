@@ -180,7 +180,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    width: 70%;
+    width: 65%;
     max-width: unset;
     padding: unset;
   }
@@ -222,7 +222,7 @@ h1 {
   }
 
   .box {
-    transform: scale(0.6);
+    transform: scale(0.45);
     display: block;
     position: absolute;
     left: -12rem;
