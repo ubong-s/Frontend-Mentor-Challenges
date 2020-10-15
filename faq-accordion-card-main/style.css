@@ -114,7 +114,8 @@ img {
   color: var(--Soft-red-PT);
 }
 
-.question-title p {
+.question-title h4 {
+  font-weight: 400;
   transition: var(--transition);
 }
 
