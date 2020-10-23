@@ -139,7 +139,7 @@ input:checked[type="checkbox"]::before {
 }
 
 .card:nth-child(2) {
-    padding: 2rem 2rem 1rem;
+    padding: 1.5rem 2rem 0.5rem;
     background: var(--Secondary);
     color: var(--VeryLightGrayishBlue);
     height: 475px;
