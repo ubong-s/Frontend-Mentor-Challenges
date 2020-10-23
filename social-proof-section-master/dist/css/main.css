@@ -141,7 +141,7 @@
     content: '';
     width: 80%;
     height: 80%;
-    background: url(..images/bg-pattern-bottom-desktop.svg);
+    background: url(../images/bg-pattern-bottom-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     bottom: 0;
