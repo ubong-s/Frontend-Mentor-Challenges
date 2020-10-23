@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap')
 
-:root {
+::root {
 
     --Primary: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
     --Secondary: linear-gradient(180deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
