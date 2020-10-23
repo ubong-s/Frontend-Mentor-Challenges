@@ -1,236 +1,250 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
+  --Primary: linear-gradient(
+    90deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+  --Secondary: linear-gradient(
+    180deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
 
-    --Primary: linear-gradient(90deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
-    --Secondary: linear-gradient(180deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
-
-    /* Neutral */
-    --VeryLightGrayishBlue: hsl(240, 78%, 98%);
-    --LightGrayishBlue: hsl(234, 14%, 74%);
-    --GrayishBlue: hsl(233, 13%, 49%);
-    --DarkGrayishBlue: hsl(232, 13%, 33%);
+  /* Neutral */
+  --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+  --LightGrayishBlue: hsl(234, 14%, 74%);
+  --GrayishBlue: hsl(233, 13%, 49%);
+  --DarkGrayishBlue: hsl(232, 13%, 33%);
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-align: center;
-    background-color: var(--VeryLightGrayishBlue);
-    color: var(--DarkGrayishBlue);
-    letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--VeryLightGrayishBlue);
+  color: var(--DarkGrayishBlue);
+  letter-spacing: 1px;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 2.5px;
-    display: block;
-    text-transform: uppercase;
-    background: var(--Primary);
-    color: var(--VeryLightGrayishBlue);
-    padding: 0.75rem 4rem;
-    margin: 2.5rem 0 0;
-    border-radius: 0.3rem;
-    box-shadow: 0 0 2px var(--GrayishBlue);
-    overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2.5px;
+  display: block;
+  text-transform: uppercase;
+  background: var(--Primary);
+  color: var(--VeryLightGrayishBlue);
+  padding: 0.75rem 4rem;
+  margin: 2.5rem 0 0;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 2px var(--GrayishBlue);
+  overflow-x: hidden;
 }
 
 .btn:hover {
-    background: transparent;
-    color: hsl(237, 63%, 64%);
-    border: 1px solid hsl(233, 13%, 49%);
+  background: transparent;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(233, 13%, 49%);
 }
 
 .container {
-    position: relative;
-    width: 90%;
-    margin: auto;
+  position: relative;
+  width: 90%;
+  margin: auto;
 }
 
-.bg-top, .bg-btm {
-    position: absolute;
+.bg-top,
+.bg-btm {
+  position: absolute;
 }
 
 .bg-top {
-    right: -20;
-    top: 0;
+  right: -20;
+  top: 0;
 }
 
 .bg-btm {
-    display: none;
+  display: none;
 }
 
 /* header */
 .header {
-    padding: 3rem 0 2rem;
+  padding: 3rem 0 2rem;
 }
 
 .toggle-group > * {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .toggle {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
-.toggle-text{
-    color: var(--LightGrayishBlue);
+.toggle-text {
+  color: var(--LightGrayishBlue);
 }
 
 /* Toggle */
-input[type="checkbox"] {
-    position: relative;
-    background: var(--Primary);
-    height: 1.5rem;
-    width: 2.8rem;
-    -webkit-appearance: none;
-    outline: none;
-    border-radius: 1rem;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+input[type='checkbox'] {
+  position: relative;
+  background: var(--Primary);
+  height: 1.5rem;
+  width: 2.8rem;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-input:checked[type="checkbox"]::before {
-    transition: 1s ease-in-out;
+input:checked[type='checkbox']::before {
+  transition: 1s ease-in-out;
 }
 
-input[type="checkbox"]::before {
-    content: '';
-    position: absolute;
-    background: var(--VeryLightGrayishBlue);
-    border-radius: 1rem;
-    width: 1.3rem;
-    top: 2.5px;
-    right: 2.5px;
-    bottom: 2px;
-    transition:  1s ease-in-out;
+input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  background: var(--VeryLightGrayishBlue);
+  border-radius: 1rem;
+  width: 1.3rem;
+  top: 2.5px;
+  right: 2.5px;
+  bottom: 2px;
+  transition: 1s ease-in-out;
 }
 
-input:checked[type="checkbox"]::before {
-    left: 2.5px;
-    transition: 1s ease-in-out;
+input:checked[type='checkbox']::before {
+  left: 2.5px;
+  transition: 1s ease-in-out;
 }
 
 /* Cards */
 .card-grid {
-    display: grid;
-    gap: 2rem 0;
-    padding: 2rem 0 3rem;
+  display: grid;
+  gap: 2rem 0;
+  padding: 2rem 0 3rem;
 }
 
 .card {
-    padding:1rem 2rem;
-    background: white;
-    box-shadow: 0 0 1px 1px var(--VeryLightGrayishBlue);
-    border-radius: 0.7rem;
-    height: 420px;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 0 1px 1px var(--VeryLightGrayishBlue);
+  border-radius: 0.7rem;
+  height: 420px;
 }
 
 .card:nth-child(2) {
-    padding: 1.5rem 2rem 0.5rem;
-    background: var(--Secondary);
-    color: var(--VeryLightGrayishBlue);
-    height: 475px;
+  padding: 1.5rem 2rem 0.5rem;
+  background: var(--Secondary);
+  color: var(--VeryLightGrayishBlue);
+  height: 475px;
+  position: relative;
+  z-index: 2;
 }
 
 .card:nth-child(2) .btn {
-    background: var(--VeryLightGrayishBlue);
-    color: hsl(237, 63%, 64%);
+  background: var(--VeryLightGrayishBlue);
+  color: hsl(237, 63%, 64%);
 }
 
 .card:nth-child(2) .btn:hover {
-    background: transparent;
-    color: var(--VeryLightGrayishBlue);
-    border: 1px solid var(--VeryLightGrayishBlue);
+  background: transparent;
+  color: var(--VeryLightGrayishBlue);
+  border: 1px solid var(--VeryLightGrayishBlue);
 }
 
 .price {
-    color: var(--DarkGrayishBlue);
-    font-size: 4rem;
+  color: var(--DarkGrayishBlue);
+  font-size: 4rem;
 }
 
 .price p {
-    line-height: 0.2;
+  line-height: 0.2;
 }
 
 .annual {
-	display: none;
+  display: none;
 }
 
 .show .annual {
-	display: block;
+  display: block;
 }
 
 .show .month {
-	display: none;
+  display: none;
 }
 
-
-
 .card:nth-child(2) .price p {
-    font-size: 4rem;
-    line-height: 0.5;
-    color: var(--VeryLightGrayishBlue);
+  font-size: 4rem;
+  line-height: 0.5;
+  color: var(--VeryLightGrayishBlue);
 }
 
 li {
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 li:first-child {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .card:nth-child(2) li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.card:nth-child(2) li:first-child  {
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
+.card:nth-child(2) li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 75%;
-    }
+  .container {
+    width: 75%;
+  }
 
-    .bg-top {
-        right: 0;
-        top: 0;
-    }
+  .bg-top {
+    right: 0;
+    top: 0;
+  }
 
-    .bg-btm {
-        display: block;
-        left: 0;
-        bottom: 0;
-    }
+  .bg-btm {
+    display: block;
+    left: 0;
+    bottom: 0;
+  }
 
-    input[type="checkbox"] {
-        height: 2rem;
-        width: 3.5rem;
-    }
+  input[type='checkbox'] {
+    height: 2rem;
+    width: 3.5rem;
+  }
 
-    input[type="checkbox"]::before {
-        width: 1.7rem;
-    }
+  input[type='checkbox']::before {
+    width: 1.7rem;
+  }
 
-    .card-grid {
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-    }
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
 
-    
+  .card:nth-child(1) {
+    border-radius: 0.7rem 0 0 0.7rem;
+  }
+
+  .card:nth-child(3) {
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
 }
