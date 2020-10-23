@@ -80,6 +80,9 @@ img {
   width: 80%;
   margin: auto;
   z-index: 3;
+  -webkit-box-shadow: 0 5px 6px -6px #000000;
+  -moz-box-shadow: 0 5px 6px -6px #000000;
+  box-shadow: 0 5px 6px -6px #000000;
 }
 
 .inner-phone {
@@ -119,6 +122,9 @@ img {
   color: var(--Desaturated-Dark);
   border-radius: 0.75rem 0.75rem 0.35rem 0.75rem;
   text-align: left;
+  -webkit-box-shadow: 0 2px 6px -6px #000000;
+  -moz-box-shadow: 0 2px 6px -6px #000000;
+  box-shadow: 0 2px 6px -6px #000000;
 }
 
 .msg-left {
@@ -277,7 +283,6 @@ img {
 }
 
 @media screen and (min-width: 1025px) {
-
   .app::before {
     height: 85%;
     width: 40%;
