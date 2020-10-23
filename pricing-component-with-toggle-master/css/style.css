@@ -131,7 +131,7 @@ input:checked[type="checkbox"]::before {
 }
 
 .card {
-    padding: 2rem;
+    padding:1rem 2rem;
     background: white;
     box-shadow: 0 0 1px 1px var(--VeryLightGrayishBlue);
     border-radius: 0.7rem;
@@ -139,7 +139,7 @@ input:checked[type="checkbox"]::before {
 }
 
 .card:nth-child(2) {
-    padding: 3rem 2rem 1rem;
+    padding: 2rem 2rem 1rem;
     background: var(--Secondary);
     color: var(--VeryLightGrayishBlue);
     height: 475px;
