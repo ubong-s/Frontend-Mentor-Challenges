@@ -277,10 +277,6 @@ img {
 }
 
 @media screen and (min-width: 1025px) {
-  .app {
-    height: 100vh;
-    overflow: hidden;
-  }
 
   .app::before {
     height: 85%;
