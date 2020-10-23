@@ -6,36 +6,46 @@
 
 @include media-lg {
   .social {
-    &-top {
-      width: 70%;
+    position: relative;
+    display: grid;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 42%;
+      height: 100%;
+      background: url(/dist/images/bg-pattern-top-desktop.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
 
-    &-rating {
-      grid-template-columns: 1fr;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 80%;
+      background: url(/dist/images/bg-pattern-bottom-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
     }
-
-    // Botton section
-    &-btm {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-@include media-xl {
-  .social {
-    min-height: 100%;
 
     // top Section
     &-top {
-      background: url(../images/bg-pattern-top-desktop.svg);
-      background-position: left;
-      background-repeat: no-repeat;
-      background-size: contain;
+      position: relative;
+      background: unset;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
       gap: 1rem;
       width: 80%;
       padding: 8rem 0 0;
+      z-index: 2;
     }
 
     &-intro {
@@ -43,17 +53,20 @@
       margin-bottom: 0;
 
       h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 1;
+        margin-right: 2rem;
       }
 
       .intro-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-right: 1rem;
       }
     }
 
     // Ratings
     &-rating {
+      grid-template-columns: 1fr;
       gap: 1.25rem;
       // margin-right: 1.5rem;
 
@@ -94,31 +107,29 @@
 
     // Bottom Section
     &-btm {
-      background: url(../images/bg-pattern-bottom-desktop.svg);
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: cover;
+      background: unset;
       display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       margin: auto;
       width: 80%;
-      padding: 2rem 0 5rem;
+      padding: 0 0 5rem;
     }
 
     &-review {
       display: grid;
       align-items: center;
-      height: 265px;
-      padding: 2.5rem 2rem;
+      height: 250px;
+      padding: 2rem;
       border-radius: 0.5rem;
       color: $white;
 
       &-top {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
 
         .info {
           h4 {
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
 
           p {
@@ -127,7 +138,22 @@
         }
       }
       p {
-        font-size: 0.85rem;
+        font-size: 0.77rem;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  @include media-xl {
+    .social {
+      min-height: 100vh;
+
+      &-top {
+        width: 75%;
+      }
+
+      &-btm {
+        width: 75%;
       }
     }
   }

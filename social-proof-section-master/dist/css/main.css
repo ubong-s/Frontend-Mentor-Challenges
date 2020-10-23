@@ -116,28 +116,41 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .social-top {
-    width: 70%;
-  }
-  .social-rating {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .social-btm {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 1280px) {
   .social {
-    min-height: 100%;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social::before {
+    position: absolute;
+    content: '';
+    width: 42%;
+    height: 100%;
+    background: url(/dist/images/bg-pattern-top-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .social::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 80%;
+    background: url(/dist/images/bg-pattern-bottom-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
   .social-top {
-    background: url(../images/bg-pattern-top-desktop.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+    background: unset;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
@@ -146,19 +159,24 @@
     gap: 1rem;
     width: 80%;
     padding: 8rem 0 0;
+    z-index: 2;
   }
   .social-intro {
     text-align: left;
     margin-bottom: 0;
   }
   .social-intro h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1;
+    margin-right: 2rem;
   }
   .social-intro .intro-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-right: 1rem;
   }
   .social-rating {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 1.25rem;
   }
   .social-rating-item {
@@ -192,16 +210,15 @@
     margin-left: 6rem;
   }
   .social-btm {
-    background: url(../images/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background: unset;
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: auto;
     width: 80%;
-    padding: 2rem 0 5rem;
+    padding: 0 0 5rem;
   }
   .social-review {
     display: -ms-grid;
@@ -209,23 +226,39 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 265px;
-    padding: 2.5rem 2rem;
+    height: 250px;
+    padding: 2rem;
     border-radius: 0.5rem;
     color: white;
   }
   .social-review-top {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
   .social-review-top .info h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .social-review-top .info p {
     color: #ee68a4;
   }
   .social-review p {
-    font-size: 0.85rem;
+    font-size: 0.77rem;
+    line-height: 1.8;
   }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1290px) {
+  .social {
+    min-height: 100vh;
+  }
+  .social-top {
+    width: 75%;
+  }
+  .social-btm {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .social-review:nth-child(1) {
     margin-top: 2.5rem;
   }

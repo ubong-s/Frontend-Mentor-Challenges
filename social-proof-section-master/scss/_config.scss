@@ -29,7 +29,7 @@ $white: hsl(0, 0%, 100%);
   }
 }
 @mixin media-xl {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1290px) {
     @content;
   }
 }
