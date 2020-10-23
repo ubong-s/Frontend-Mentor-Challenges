@@ -69,17 +69,17 @@ prevBtns.forEach(function(btn) {
 
 
 // Key Navigation
-window.addEventListener('keydown', () => {
+//window.addEventListener('keydown', () => {
  
-  if(nextKey) {
-   startSlider()
-  } else if(prevKey) {
-   startSlider('prev')
-  } else {
-   return ''
-  }
-  
-})
+//if(nextKey) {
+//   startSlider()
+//  } else if(prevKey) {
+//   startSlider('prev')
+//  } else {
+//  return ''
+//  }
+// 
+//})
 
 
 
