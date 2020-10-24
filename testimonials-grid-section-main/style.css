@@ -172,7 +172,7 @@ p {
   .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 80%;
   }
 
