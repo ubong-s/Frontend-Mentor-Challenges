@@ -89,9 +89,11 @@ p {
 }
 
 .test-bold {
+  position: relative;
   font-size: 19px;
   line-height: 1.2;
   margin-bottom: 1rem;
+  z-index: 2;
 }
 
 .test-text {
@@ -99,8 +101,16 @@ p {
 }
 
 .grid-box-1 {
+  position: relative;
   background-color: var(--Moderate-violet);
   color: var(--Light-gray);
+}
+
+.quote {
+  position: absolute;
+  right: 1.3rem;
+  top: 0;
+  z-index: 0;
 }
 
 .grid-box-2 {
@@ -172,8 +182,13 @@ p {
   .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 80%;
+  }
+
+  .quote {
+    right: 5rem;
+    top: 0;
   }
 
   .grid-box {
