@@ -199,14 +199,39 @@ img {
 
 @media screen and (min-width: 768px) {
   .header {
+    position: relative;
     background-image: url(./images/desktop/image-hero.jpg);
+
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
+    z-index: 1;
   }
+
+  header::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -2;
+  }
+
+  /* .header nav,
+  .header h1 {
+    position: relative;
+    z-index: 2;
+  } */
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    height: 50vh;
+  }
+
   .header {
     height: 50vh;
   }
