@@ -1,0 +1,174 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --font-size: 18px;
+  --font: 'Kumbh Sans', sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--very-dark-desaturated-blue);
+  font-size: var(--font-size);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: var(--dark-cyan);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pattern-top {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -60%;
+  left: -45%;
+
+  z-index: 1;
+}
+.pattern-btm {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -50%;
+  right: -45%;
+
+  z-index: 1;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.profile {
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.info {
+  position: relative;
+  padding-top: 5rem;
+}
+
+.avatar {
+  position: absolute;
+  top: -22.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid white;
+
+  border-radius: 50%;
+}
+
+.info h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.info h1 span {
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.location {
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+}
+
+.stats-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1.75rem 2rem;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stat span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--dark-grayish-blue);
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    width: 350px;
+  }
+
+  .pattern-top {
+    height: unset;
+    width: unset;
+    top: -30%;
+    left: -45%;
+  }
+  .pattern-btm {
+    height: unset;
+    width: unset;
+    bottom: -30%;
+    right: -45%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    height: unset;
+    padding: 10rem 0;
+  }
+
+  .pattern-top {
+    top: -80%;
+    left: -45%;
+  }
+  .pattern-btm {
+    bottom: -80%;
+    right: -45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pattern-top {
+    top: -90%;
+    left: -15%;
+  }
+  .pattern-btm {
+    bottom: -90%;
+    right: -15%;
+  }
+}
