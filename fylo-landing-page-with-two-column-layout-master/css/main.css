@@ -1,0 +1,530 @@
+:root{
+    --primary-1: hsl(243, 87%, 12%);
+    --primary-2: hsl(238, 22%, 44%);
+    --accent-1: hsl(224, 93%, 58%);
+    --accent-2: hsl(170, 45%, 43%);
+    --neutral-1: hsl(240, 75%, 98%);
+    --neutral-2: hsl(0, 0%, 75%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility clases */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--primary-1);
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--primary-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    letter-spacing: 1.2px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header and Navigation */
+
+header {
+    margin-top: 1.1em;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    float: left;
+    width: 80px;
+    text-align: left;
+}
+
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1.5em;
+    font-size: 0.8em;
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: var(--primary-1);
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--primary-2);
+}
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    font-weight: 600;
+    background: var(--accent-1);
+    color: var(--neutral-1);
+    text-align: center;
+    width: 100% ;
+    border-radius: 3px;
+}
+
+.btn-1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1em;
+    color: var(--accent-2);
+    text-decoration: none;
+    padding-bottom: 0.15em;
+}
+
+.btn-1 img {
+    margin-left: .5rem;
+    padding-top: .1em;
+}
+
+/* Content/Left(Desktop) Section */
+
+.left-section,
+.access-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-form {
+    width: 90%;
+    margin: 0 ;
+}
+
+.access-form {
+    width: 85%;
+    margin: 0 ;
+}
+
+/* Main area */
+.main {
+    padding-top: 7em;
+    margin-bottom: 5em;
+}
+
+.hero-title {
+    font-weight: 700;
+    padding-top: 1.5em;
+    line-height: 1.6;
+}
+
+.hero-text {
+    padding: 1.5em 0;
+    color: var(--primary-1);
+}
+
+/* Section 2 */
+.sect-2{
+    background: url(/images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 4em 0 2.5em;
+}
+
+.sect-heading {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.sect-2-text {
+    text-align: left;
+    padding: 0.5em 0;
+}
+
+.text-input {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid rgba(63, 45, 45, 0.2);
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.button-arrow {
+    display: flex;
+    flex-direction: row;
+    padding-bottom:.5em;
+    border-bottom: var(--accent-2) 1.5px solid;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Testimonial Quote */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin: 3em 1.5em;
+    padding: 1.6em;
+    align-items: flex-start;
+    box-shadow: 0 0 4px 0 rgba(63, 45, 45, 0.2);
+}
+
+.quote h4 {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.quote-text {
+    text-align: left;
+    font-size: 0.7em;
+    margin: 0.8em 0;
+}
+
+.position {
+    text-align: left;
+    font-size: 0.6em;
+}
+
+.quote-info {
+    display: flex;
+}
+
+.quote-info img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0.6em;
+}
+
+.quote-info-text {
+    margin: 0;
+}
+
+/* Early Access Section*/
+
+.early-access {
+    background: var(--primary-2);
+    padding: 4em 1em;
+    color: #fff;
+}
+
+.early-access h3 {
+    color: var(--neutral-1);
+    font-size: 1.3rem;
+}
+
+.early-access p{
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background: var(--primary-1);
+    padding: 4em 0.5em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-list {
+    margin: 2em 0;
+}
+
+.footer-list li {
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+}
+
+.footer-list a {
+    color: #fff;
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+    color: var(--accent-2);
+}
+
+.social{
+    margin: auto;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    margin: 50px 0 30px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.fas {
+    margin-right: 1rem;
+}
+
+.fab {
+    color: #fff;
+    font-size: .7rem;
+    margin: 0 5px;
+    padding: 8px;
+    border: 1.5px #fff solid;
+    border-radius: 50%;
+    place-items: center;
+    justify-items: center ;
+}
+
+@media(min-width:800px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .left-section {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+    .right-section {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+
+    /* Header and Navigation */
+    
+    header {
+        margin-top: 5em;
+    }
+    
+    .logo {
+        width: 200px;
+    }
+    
+    nav li {
+        margin-left: 3.2em;
+        font-size: 0.95em;
+    }
+    
+    /* Access section */
+
+    .access-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        padding: 3em 0 2em;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    .access-content {
+        align-self: start;
+        text-align: left;
+    }
+
+    .access-content h3 {
+        font-size: 2em;
+    }
+
+    .access-section p {
+        font-size: 1rem;
+        padding-right: 3rem;
+    }
+
+    .access-form {
+       align-self: flex-start;
+       justify-self: flex-end;
+    }
+
+    .access-content .btn {
+        font-size: 2.5em;
+        width: auto;
+    }
+    
+    /* Main */
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-gap: 3em;
+        padding: 5em 0;
+    }
+
+
+    .hero-title {
+        font-size: 2.35em;
+    }
+
+    .hero-form {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        align-self: flex-start;
+    }
+
+    input {
+        letter-spacing: 1.2px;
+    }
+
+    .main .text-input {
+        width: 70%;
+        height: 3rem;
+        margin-right: 1em;
+    }
+    
+    .main .btn {
+        width: 30%;
+        height: 3rem;
+    }
+
+    .main p {
+        font-size: 1em;
+        padding: 1.5em 5em 1.5em 0;
+    }
+
+    /* Sect 2 */
+
+    .sect-2 {
+        padding: 9em 0 2em;
+        margin: 0
+    }
+
+    .sect-content {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-gap: 3em;
+        padding: 5em 0;
+    }
+
+    .sect-heading {
+        font-weight: 700;
+        font-size: 2.35em;
+        text-align: left;
+        margin-bottom: 1em;
+        padding: 0;
+        align-self: flex-start;
+    }
+
+    .sect-2-text {
+        padding-right: 6em;
+    }
+
+    .button-arrow{
+        align-self: flex-start;
+    }
+
+
+    /* Footer */
+
+    .footer-cols {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 90%;
+        padding: 4em 0 1em;
+    }
+
+    .footer-col-2 {
+        padding-top: 3.1em;
+    }
+
+    .footer-logo {
+        width: 10em;
+    }
+
+    .social-list {
+        margin-top: 2em;
+        justify-content: left;
+    }
+    
+    /* Testimonial Quote */
+
+    .quote {
+        width: 65%;
+        margin: 3em 0;
+        padding: 2em;
+        align-self: flex-start;
+    }
+
+    .quote h4 {
+        font-size: 0.8em;
+        text-align: left;
+        letter-spacing: 1.3px;
+    }
+
+    .quote-text {
+        font-size: 0.8em;
+        letter-spacing: 1.3px;
+    }
+
+    .quote-info {
+        align-items: center;
+        padding-top: 1em;
+    }
+
+    .position {
+        font-size: 0.6em;
+        letter-spacing: 1.3px;
+    }
+
+    .quote-info img {
+        width: 30px;
+    }
+    
+}
+
+
+.btn {
+    letter-spacing: 1.5px;
+}
